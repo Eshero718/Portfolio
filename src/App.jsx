@@ -136,7 +136,7 @@ I love learning new design skills and making websites and apps look good and eas
 
     <div
       className="project-card"
-      style={{ backgroundImage: "url(awsometodos.svg)" }}
+      style={{ backgroundImage: "url(Awesometodos.svg)" }}
     >
       <div className="overlay">
         <h3>AwesomeTodos</h3>
