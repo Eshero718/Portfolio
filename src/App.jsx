@@ -2,11 +2,6 @@ import React from "react";
 import "./styles.css";
 
 import profile from "./assets/acero.jfif";
-import html from "./assets/html.png";
-import css from "./assets/css.png";
-import js from "./assets/javas.png";
-import reactLogo from "./assets/react.png";
-import figma from "./assets/figma.png";
 
 
 
@@ -30,15 +25,15 @@ export default function App() {
       <nav className="navbar">
         <h2 className="logo" onClick={scrollToTop}>Ace</h2>
         <ul>
+          <li onClick={() => scrollToSection("home")}>Home</li>
           <li onClick={() => scrollToSection("about")}>About</li>
-          <li onClick={() => scrollToSection("skills")}>Skills</li>
           <li onClick={() => scrollToSection("projects")}>Projects</li>
           <li onClick={() => scrollToSection("contact")}>Contact</li>
         </ul>
       </nav>
 
       
-      <section className="home">
+      <section id="home" className="home">
         <h1>Ace Robin <br /><span>Sunio</span></h1>
         <p>Creating digital experiences that look good and are easy to use.</p>
         <div className="buttons">
@@ -61,24 +56,7 @@ I love learning new design skills and making websites and apps look good and eas
       </section>
 
       
-      <section id="skills" className="skills">
-        <h3>My Toolkit</h3>
-
-        <div className="skills-row">
-          {[ 
-            { img: html, name: "HTML" },
-            { img: css, name: "CSS" },
-            { img: js, name: "JavaScript" },
-            { img: reactLogo, name: "React" },
-            { img: figma, name: "Figma" }
-          ].map((skill, i) => (
-            <div className="skill" key={i}>
-              <img src={skill.img} />
-              <p>{skill.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
       
       
